@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RemoteSkills</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="remoteskills">
+                <img class="remote-image" src="images/RemoteSkillsLogo.png" alt="error">
+                <a class="remote-text" href="#">RemoteSkills</a>
+            </div>
+            <div class="nav-icons"> 
+                <a class="nav-icons-text" href="#">Digital marketing course</a>
+                <a class="nav-icons-text" href="#">Community</a>
+                <a class="nav-icons-text" href="#">Events</a>
+                <a class="nav-icons-text" id="blogs-and-resources" href="#">Blogs and resources</a>
+
+            </div>
+        </nav>
+    </header>
+    <div class="background">
+        <span class="vertical-line-container">
+            <div class="div-one" id="vertical-line"></div> <div class="div-five" id="vertical-line"></div> <div class="div-eight" id="vertical-line"></div> <div class="div-eleven" id="vertical-line"></div>
+            <div class="div-two" id="vertical-line"></div> <div class="div-six" id="vertical-line"></div> <div class="div-nine" id="vertical-line"></div> <div class="div-twelve" id="vertical-line"></div>
+            <div class="div-three" id="vertical-line"></div> <div class="div-seven" id="vertical-line"></div> <div class="div-ten" id="vertical-line"></div> <div class="div-thirten" id="vertical-line"></div>
+            <div class="div-four" id="vertical-line"></div>
+        </span>
+    </div>
+
+    <div class="base-contents-div">
+        <p class="a-project-based">A project-based <span class="online-community">online community</span></p>
+        <p class="for-aspiring">for aspiring digital professionals.</p>
+    </div>
+    <div class="the-span">
+        <div class="just-div">
+            <!-- <img class="box-img" src="images/dev_lady-removebg-preview.png" alt=""> -->
+        </div>
+        <img class="box-img" src="images/dev_lady-removebg-preview.png" alt="">
+    </div>
+
+    <div class="learn-web-div">
+        <div>
+            <p class="learn-web">Learn Web Development and access global opportunities.</p>
+            <p class="learn-web-digital">Learn web development, digital marketing, languages, and connect to</p>
+            <p class="opportunities">opportunities to help you land a reote job or launch your own digital business.</p>
+        </div>
+        
+        <div class="button-div">
+            <a class="explore-course" href="#">Explore course</a>
+            <a class="free-resources" href="#">Free resources</a>
+        </div>
+    </div>
+
+    <style>
+        
+        .free-resources{
+            background-color: rgba(75, 75, 78, 0.664);
+            padding: 15px;
+            font-size: 12px;
+            border-radius: 40px;
+            text-decoration: solid;
+            font-weight: 600;
+        }
+        .explore-course{
+            background-color: rgb(52, 223, 166);
+            padding: 15px;
+            font-size: 12px;
+            border-radius: 40px;
+            color: rgba(25, 25, 32, 0.925);
+            text-decoration: solid;
+            font-weight: 600;
+        }
+        .button-div{
+            margin-top: 40px;
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+        }
+        .opportunities{
+            width: 500px;
+            font-size: 14px;
+            color: rgb(104, 102, 102);
+            margin-top: 8px;
+        }
+        .learn-web-digital{
+            width: 500px;
+            font-size: 14px;
+            color: rgb(104, 102, 102);
+            margin-top: 20px;
+        }
+        .learn-web{
+            width: 600px;
+            font-size: 40px;
+            font-weight: bold;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 55px;
+
+        }
+        .learn-web-div{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 115px;
+            top: 150px;
+            color: white;
+            
+        }
+        .box-img{
+            width: 400px;
+            height: 350px;
+            object-position: bottom;
+            border-radius: 60px;
+            border: none;
+            object-fit: cover;
+            object-position: right;
+            position: absolute;
+            top: 145px;
+            right: 178px;
+            
+        }
+        .just-div{
+            width: 250px;
+            height: 230px;
+            background-image: linear-gradient(to right bottom,blue 30%, rgb(39, 180, 180) 20%);
+            position: absolute;
+            top: 250px;
+            right: 300px;
+            border-radius: 60px;
+            transform: rotate(-10deg);
+            overflow: hidden;
+        }
+        .vertical-line-container{
+            display: flex;
+            flex-direction: row;
+            gap: 80px;
+            margin-left: 80px;
+        }
+        #vertical-line{
+            background-color: rgb(29, 29, 29);
+            width: 1px;
+            height: 500px;
+            
+        }
+        .for-aspiring{
+            color: rgba(145, 143, 143, 0.973);
+            font-size: 16px;
+        }
+        .online-community{
+            color: rgb(52, 223, 166);
+        }
+        .a-project-based{
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: solid;
+        }
+        .base-contents-div{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            gap: 3px;
+        }
+        #blogs-and-resources{
+            background-color: rgb(52, 223, 166);
+            padding: 15px;
+            font-size: 12px;
+            border-radius: 40px;
+            position: absolute;
+            right: 120px;
+            top: 18px;
+            color: rgba(25, 25, 32, 0.925);
+            text-decoration: solid;
+            font-weight: 600;
+        }
+        .background{
+            background-color: rgba(19, 19, 26, 0.808);
+            width: 100%;
+            height: 500px;
+
+        }
+        .nav-icons-text{
+            font-size: 16px;
+        }
+        .remote-text{
+            font-size: 22px;
+            text-decoration: solid;
+            margin-left: 50px;
+            font-family:'Times New Roman', Times, serif;
+            
+            
+        }
+        .remote-image{
+            width: 60px;
+            height: 60px;
+            object-position: top;
+            color: white;
+            position: absolute;
+            left: 98px;
+            top: 4px;
+            
+        }
+        .nav-icons{
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+            margin-right: 200px;
+            
+        }
+        .remoteskills{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-style: solid;
+            
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 30px 100px 30px;
+        }
+        body{
+            background-color: rgba(25, 25, 32, 0.925);
+        }
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+    </style>
+
+
+
+
+</body>
+</html>
