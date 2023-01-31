@@ -8,16 +8,16 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="remoteskills">
-                <img class="remote-image" src="images/RemoteSkillsLogo.png" alt="error">
-                <a class="remote-text" href="#">RemoteSkills</a>
+        <nav id="the-nav">        
+            <div class="remoteskills" id="remoteskills">
+                <img class="remote-image" id="remote-image" src="images/RemoteSkillsLogo.png" alt="error">
+                <a class="remote-text" id="remote-text" href="#">RemoteSkills</a>
             </div>
-            <div class="nav-icons"> 
-                <a class="nav-icons-text" href="#">Digital marketing course</a>
-                <a class="nav-icons-text" href="#">Community</a>
-                <a class="nav-icons-text" href="#">Events</a>
-                <a class="nav-icons-text" id="blogs-and-resources" href="#">Blogs and resources</a>
+            <div class="nav-icons" id="nav-icons"> 
+                <a class="nav-icons-text" id="nav-icons-text" href="#">Digital marketing course</a>
+                <a class="nav-icons-text" id="nav-icons-text" href="#">Community</a>
+                <a class="nav-icons-text" id="nav-icons-text" href="#">Events</a>
+                <a class="nav-icons-text"  id="blogs-and-resources" href="#">Blogs and resources</a>
 
             </div>
         </nav>
@@ -42,11 +42,13 @@
         <img class="box-img" src="images/dev_lady-removebg-preview.png" alt="">
     </div>
 
-    <div class="learn-web-div">
-        <div>
+    <div class="learn-web-div" id="learn-web-div">
+        <div class="learn-web-div-texts">
             <p class="learn-web">Learn Web Development and access global opportunities.</p>
-            <p class="learn-web-digital">Learn web development, digital marketing, languages, and connect to</p>
-            <p class="opportunities">opportunities to help you land a reote job or launch your own digital business.</p>
+            <div>
+                <p class="learn-web-digital">Learn web development, digital marketing, languages, and connect to</p>
+                <p class="opportunities">opportunities to help you land a reote job or launch your own digital business.</p>
+            </div>
         </div>
         
         <div class="button-div">
@@ -55,193 +57,264 @@
         </div>
     </div>
 
-    <style>
-        
-        .free-resources{
-            background-color: rgba(75, 75, 78, 0.664);
-            padding: 15px;
-            font-size: 12px;
-            border-radius: 40px;
-            text-decoration: solid;
-            font-weight: 600;
-        }
-        .explore-course{
-            background-color: rgb(52, 223, 166);
-            padding: 15px;
-            font-size: 12px;
-            border-radius: 40px;
-            color: rgba(25, 25, 32, 0.925);
-            text-decoration: solid;
-            font-weight: 600;
-        }
-        .button-div{
-            margin-top: 40px;
-            display: flex;
-            flex-direction: row;
-            gap: 50px;
-        }
-        .opportunities{
-            width: 500px;
-            font-size: 14px;
-            color: rgb(104, 102, 102);
-            margin-top: 8px;
-        }
-        .learn-web-digital{
-            width: 500px;
-            font-size: 14px;
-            color: rgb(104, 102, 102);
-            margin-top: 20px;
-        }
-        .learn-web{
-            width: 600px;
-            font-size: 40px;
-            font-weight: bold;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            line-height: 55px;
 
-        }
-        .learn-web-div{
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            left: 115px;
-            top: 150px;
-            color: white;
-            
-        }
-        .box-img{
-            width: 400px;
-            height: 350px;
-            object-position: bottom;
-            border-radius: 60px;
-            border: none;
-            object-fit: cover;
-            object-position: right;
-            position: absolute;
-            top: 145px;
-            right: 178px;
-            
-        }
-        .just-div{
-            width: 250px;
-            height: 230px;
-            background-image: linear-gradient(to right bottom,blue 30%, rgb(39, 180, 180) 20%);
-            position: absolute;
-            top: 250px;
-            right: 300px;
-            border-radius: 60px;
-            transform: rotate(-10deg);
-            overflow: hidden;
-        }
-        .vertical-line-container{
-            display: flex;
-            flex-direction: row;
-            gap: 80px;
-            margin-left: 80px;
-        }
-        #vertical-line{
-            background-color: rgb(29, 29, 29);
-            width: 1px;
-            height: 500px;
-            
-        }
-        .for-aspiring{
-            color: rgba(145, 143, 143, 0.973);
-            font-size: 16px;
-        }
-        .online-community{
-            color: rgb(52, 223, 166);
-        }
-        .a-project-based{
-            font-size: 20px;
-            font-weight: bold;
-            text-decoration: solid;
-        }
-        .base-contents-div{
-            color: white;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 10px;
-            gap: 3px;
-        }
+<style>
+    /* @media (max-width: 414px){
         #blogs-and-resources{
             background-color: rgb(52, 223, 166);
-            padding: 15px;
-            font-size: 12px;
+            padding: 10px 15px;
+            font-size: 9px;
             border-radius: 40px;
             position: absolute;
-            right: 120px;
-            top: 18px;
+            right: 10px;
+            top: 9px;
             color: rgba(25, 25, 32, 0.925);
             text-decoration: solid;
             font-weight: 600;
-        }
-        .background{
-            background-color: rgba(19, 19, 26, 0.808);
-            width: 100%;
-            height: 500px;
 
         }
-        .nav-icons-text{
-            font-size: 16px;
+        #remote-image{
+            left: 20px;
         }
-        .remote-text{
-            font-size: 22px;
-            text-decoration: solid;
-            margin-left: 50px;
-            font-family:'Times New Roman', Times, serif;
-            
-            
+        #remote-text{
+            left: 20px;
         }
-        .remote-image{
-            width: 60px;
-            height: 60px;
-            object-position: top;
-            color: white;
-            position: absolute;
-            left: 98px;
-            top: 4px;
-            
-        }
-        .nav-icons{
-            display: flex;
-            flex-direction: row;
-            gap: 25px;
-            margin-right: 200px;
-            
-        }
-        .remoteskills{
-            display: flex;
-            flex-direction: row;
-            
-        }
-        a{
-            color: white;
-            text-decoration: none;
-            font-style: solid;
-            
-        }
-        nav{
+        #the-nav{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin: 30px 100px 30px;
-        }
-        body{
-            background-color: rgba(25, 25, 32, 0.925);
-        }
-        *{
-            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px 0px 30px;
+            background-color: rgba(129, 129, 129, );
+            
+            padding: 19px 100px;
             margin: 0px;
-            padding: 0px;
         }
+        #nav-icons{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-right: 0px;
+            padding: 0px;
         
-    </style>
+        }
+        #learn-web-div{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 50px;
+            top: 200px;
+            color: white;
+            gap: 40px;
+        
+    }
+    } */
+    
+    .free-resources{
+        background-color: rgba(75, 75, 78, 0.664);
+        padding: 11px 20px;
+        font-size: 10px;
+        /* width: 120px; */
+        height: fit-content;
+        
+        border-radius: 40px;
+        text-decoration: solid;
+        font-weight: 600;
+    }
+    .explore-course{
+        background-color: rgb(52, 223, 166);
+        padding: 10px 20px;
+        /* width: 110px; */
+        height: fit-content;
+        font-size: 9.5px;
+        border-radius: 40px;
+        color: rgba(25, 25, 32, 0.925);
+        text-decoration: solid;
+        font-weight: 600;
+    }
+    .button-div{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .opportunities{
+        width: 900px;
+        font-size: 16px;
+        color: rgb(143, 141, 141);
+        margin-top: 13px;
+    }
+    .learn-web-digital{
+        width: 900px;
+        font-size: 16px;
+        color: rgb(143, 141, 141);
+        margin-top: 20px;
 
+    }
+    .learn-web{
+        width: 750px;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 65px;
 
+    }
+    .learn-web-div-texts{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .learn-web-div{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 55px;
+        top: 120px;
+        color: white;
+        gap: 40px;
+        
+    }
+    .box-img{
+        width: 440px;
+        height: 390px;
+        object-position: bottom;
+        border-radius: 60px;
+        border: none;
+        object-fit: cover;
+        object-position: right;
+        position: absolute;
+        top: 75px;
+        right: -12px;
+        
+    }
+    .just-div{
+        width: 290px;
+        height: 270px;
+        background-image: linear-gradient(to right bottom,blue 30%, rgb(39, 180, 180) 20%);
+        position: absolute;
+        top: 180px;
+        right: 110px;
+        border-radius: 60px;
+        transform: rotate(-10deg);
+        overflow: hidden;
+    }
+    .vertical-line-container{
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        margin-left: 80px;
+    }
+    #vertical-line{
+        background-color: rgb(36, 35, 35);
+        width: 1px;
+        height: 500px;
+        
+    }
+    .for-aspiring{
+        color: rgba(158, 156, 156, 0.973);
+        font-size: 12px;
+    }
+    .online-community{
+        color: rgb(52, 223, 166);
+    }
+    .a-project-based{
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: solid;
+    }
+    .base-contents-div{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 8px;
+        gap: 4px;
+    }
+    #blogs-and-resources{
+        background-color: rgb(52, 223, 166);
+        padding: 10px 15px;
+        font-size: 9px;
+        border-radius: 40px;
+        position: absolute;
+        right: 60px;
+        top: 9px;
+        color: rgba(25, 25, 32, 0.925);
+        text-decoration: solid;
+        font-weight: 600;
+    }
+    .background{
+        background-color: rgba(19, 19, 26, 0.808);
+        width: 100%;
+        height: 500px;
 
+    }
+    .nav-icons-text{
+        font-size: 10px;
+    }
+    .remote-text{
+        font-size: 14px;
+        text-decoration: solid;
+        margin-left: 27px;
+        font-family:'Times New Roman', Times, serif;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        
+        
+    }
+    .remote-image{
+        width: 30px;
+        height: 30px;
+        object-position: top;
+        color: white;
+        position: absolute;
+        left: 50px;
+        top: 5px;
+        
+    }
+    .nav-icons{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        margin-right: 110px;
+        
+    }
+    .remoteskills{
+        display: flex;
+        flex-direction: row;
+        margin-left: -40px;
+        
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-style: solid;
+        
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px 100px 30px;
+        background-color: rgba(129, 129, 129, );
+        
+        padding: 19px 100px;
+        margin: 0px;
+    }
+    /* .container{
+        width: 100%;
+        height: 100%;
+    } */
+    body{
+        background-color: rgba(25, 25, 32, 0.89);
+        width: 100%;
+    }
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+        padding: 0px;
+    }
 
+    
+</style>
 </body>
 </html>
