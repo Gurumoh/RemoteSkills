@@ -17,12 +17,12 @@
                 <a class="nav-icons-text" id="nav-icons-text" href="#">Digital marketing course</a>
                 <a class="nav-icons-text" id="nav-icons-text" href="#">Community</a>
                 <a class="nav-icons-text" id="nav-icons-text" href="#">Events</a>
-                <a class="nav-icons-text"  id="blogs-and-resources" href="#">Blogs and resources</a>
+                <a class="blogs-and-resources" id="blogs-and-resources" href="#">Blogs and resources</a>
 
             </div>
         </nav>
     </header>
-    <div class="background">
+    <div class="background" id="background">
         <span class="vertical-line-container">
             <div class="div-one" id="vertical-line"></div> <div class="div-five" id="vertical-line"></div> <div class="div-eight" id="vertical-line"></div> <div class="div-eleven" id="vertical-line"></div>
             <div class="div-two" id="vertical-line"></div> <div class="div-six" id="vertical-line"></div> <div class="div-nine" id="vertical-line"></div> <div class="div-twelve" id="vertical-line"></div>
@@ -31,83 +31,140 @@
         </span>
     </div>
 
-    <div class="base-contents-div">
-        <p class="a-project-based">A project-based <span class="online-community">online community</span></p>
-        <p class="for-aspiring">for aspiring digital professionals.</p>
+    <div class="base-contents-div" id="base-contents-div">
+        <p class="a-project-based" id="a-project-based">A project-based <span class="online-community">online community</span></p>
+        <p class="for-aspiring" id="for-aspiring">for aspiring digital professionals.</p>
     </div>
-    <div class="the-span">
-        <div class="just-div">
+    <div id="img-container">
+        <div class="just-div" id="just-div">
             <!-- <img class="box-img" src="images/dev_lady-removebg-preview.png" alt=""> -->
         </div>
-        <img class="box-img" src="images/dev_lady-removebg-preview.png" alt="">
+        <img class="box-img" id="box-img" src="images/dev_lady-removebg-preview3.png" alt="">
+    
     </div>
-
+    
     <div class="learn-web-div" id="learn-web-div">
-        <div class="learn-web-div-texts">
-            <p class="learn-web">Learn Web Development and access global opportunities.</p>
+        <div class="learn-web-div-texts" id="learn-web-div-texts">
+            <p class="learn-web" id="learn-web">Learn Web Development and access global opportunities.</p>
             <div>
-                <p class="learn-web-digital">Learn web development, digital marketing, languages, and connect to</p>
-                <p class="opportunities">opportunities to help you land a reote job or launch your own digital business.</p>
+                <p class="learn-web-digital" id="learn-web-digital">Learn web development, digital marketing, languages, and connect to</p>
+                <p class="opportunities" id="opportunities" >opportunities to help you land a reote job or launch your own digital business.</p>
             </div>
         </div>
         
-        <div class="button-div">
-            <a class="explore-course" href="#">Explore course</a>
-            <a class="free-resources" href="#">Free resources</a>
+        <div class="button-div" id="button-div">
+            <a class="explore-course" id="explore-course" href="#">Explore course</a>
+            <a class="free-resources" id="free-resources" href="#">Free resources</a>
         </div>
     </div>
 
 
 <style>
-    /* @media (max-width: 414px){
-        #blogs-and-resources{
-            background-color: rgb(52, 223, 166);
-            padding: 10px 15px;
-            font-size: 9px;
-            border-radius: 40px;
-            position: absolute;
-            right: 10px;
-            top: 9px;
-            color: rgba(25, 25, 32, 0.925);
-            text-decoration: solid;
-            font-weight: 600;
 
+    @media (max-width: 1200px){
+        #base-contents-div{
+            margin-top: 54px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            gap: 2px;
         }
-        #remote-image{
-            left: 20px;
+        #for-aspiring{
+            color: rgba(158, 156, 156, 0.973);
+            font-size: 10px;
         }
-        #remote-text{
-            left: 20px;
+        #a-project-based{
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: solid;
         }
-        #the-nav{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin: 30px 0px 30px;
-            background-color: rgba(129, 129, 129, );
+        #free-resources{
+            padding: 9px 19px;
+            font-size: 8px;
+        }
+        #explore-course{
+            padding: 8.7px 20px;
+            font-size: 7.5px;
+        }
+        #body{
             
-            padding: 19px 100px;
-            margin: 0px;
         }
-        #nav-icons{
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            margin-right: 0px;
+        #background{
+            height: 450px;
+        }
+        #img-container{
+            
+        }
+        #box-img{
+            position: absolute;
+            right: 50px;
+            top: 115px;
+            width: 150px;
+            object-fit: contain;
+            height: 230px;
+            margin: 0px;
             padding: 0px;
-        
+            
+        }
+        #just-div{
+            right: 20px;
+            top: 178px;
+            width: 175px;
+            height: 160px;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        #opportunities{
+            width: 300px;
+            font-size: 7.5px;
+            margin-top: 8px;
+            margin-bottom: 0px;
+           
+    }
+        #learn-web-digital{
+            width: 300px;
+            font-size: 7.5px;
+            margin-top: 0px;
+            
+    }
+        #learn-web{
+            line-height: 20px;
+            width: 240px;
+            font-size: 15px;
+            
         }
         #learn-web-div{
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            left: 50px;
-            top: 200px;
-            color: white;
-            gap: 40px;
-        
+            left: 14px;
+            top: 150px;
+            
+        }
+        #blogs-and-resources{
+            padding: 4px;
+            font-size: 8px;
+            right: 16px;
+            top: 7.5px;
+        }
+        #nav-icons-text{
+            font-size: 8px;
+        }
+        #nav-icons{
+            margin-right: 120px;
+            gap: 15px;
+            
+        }
+        #remote-text{
+            left: 6px;
+            top: 13px;
+            font-size: 10px;
+        }
+        #remote-image{
+            left: 6px;
+            top: -1px;
+        }
+        #the-nav{
+            padding: 12px 0px;
+        }
     }
-    } */
     
     .free-resources{
         background-color: rgba(75, 75, 78, 0.664);
@@ -141,13 +198,14 @@
         font-size: 16px;
         color: rgb(143, 141, 141);
         margin-top: 13px;
+        display: inline-block;
     }
     .learn-web-digital{
         width: 900px;
         font-size: 16px;
         color: rgb(143, 141, 141);
         margin-top: 20px;
-
+        display: inline-block;
     }
     .learn-web{
         width: 750px;
@@ -155,12 +213,13 @@
         font-weight: bold;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         line-height: 65px;
-
+        display: inline-block;
     }
     .learn-web-div-texts{
         display: flex;
         flex-direction: column;
         gap: 20px;
+       
     }
     .learn-web-div{
         display: flex;
@@ -178,11 +237,11 @@
         object-position: bottom;
         border-radius: 60px;
         border: none;
-        object-fit: cover;
+        object-fit: contain;
         object-position: right;
         position: absolute;
         top: 75px;
-        right: -12px;
+        right: 160px;
         
     }
     .just-div{
@@ -229,7 +288,7 @@
         margin-bottom: 8px;
         gap: 4px;
     }
-    #blogs-and-resources{
+    .blogs-and-resources{
         background-color: rgb(52, 223, 166);
         padding: 10px 15px;
         font-size: 9px;
@@ -240,11 +299,12 @@
         color: rgba(25, 25, 32, 0.925);
         text-decoration: solid;
         font-weight: 600;
+        font-size: 10px;
     }
     .background{
         background-color: rgba(19, 19, 26, 0.808);
-        width: 100%;
         height: 500px;
+        width: 100%;
 
     }
     .nav-icons-text{
@@ -294,7 +354,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 30px 100px 30px;
+        margin: 30px 0px 30px;
         background-color: rgba(129, 129, 129, );
         
         padding: 19px 100px;
@@ -307,6 +367,7 @@
     body{
         background-color: rgba(25, 25, 32, 0.89);
         width: 100%;
+        
     }
     *{
         font-family: Arial, Helvetica, sans-serif;
