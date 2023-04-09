@@ -11,24 +11,31 @@ a{
     font-style: solid;
     
 }
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 .container{
     background-color: rgba(25, 25, 32, 0.89);
     margin: 0px;
     padding: 0px;
     display: grid;
     grid-template-rows: 50px 1fr 100px;
-
+    overflow: hidden;
    
 }
 
 /* NAV */
+header{
+    width: 100%;
+}
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 30px 0px 30px;
     background-color: rgba(129, 129, 129, );
-    
     padding: 19px 100px;
     margin: 0px;
 }
@@ -81,6 +88,9 @@ nav{
     text-decoration: solid;
     font-weight: 600;
     font-size: 10px;
+}
+.menu{
+    display: none;
 }
 
 /* BACKGROUND */
@@ -186,14 +196,12 @@ nav{
 /* IMAGE */
 .img-container{
     height: 100px;
-    width: 100%;
-    
+    width: 100%; 
 }
 .just-div{
     width: 290px;
     height: 270px;
     background-image: linear-gradient(to right bottom,blue 30%, rgb(39, 180, 180) 20%);
-    
     border-radius: 60px;
     transform: rotate(-10deg);
     overflow: visible;
@@ -259,20 +267,10 @@ nav{
 }
 
 @media (max-width: 1092px){
-    .remote-image{
-        /* left: 18px; */
-    }
-    .remote-text{
-        /* left: 18px; */
-    }
     .vertical-line-container{
         margin-left: 0px;
         gap: 60px;
     }
-    .background{
-        /* grid-template-columns: 600px 300px;
-        padding-left: 20px; */
-   }
    .learn-web{
         width: 600px;
         font-size: 40px;
@@ -397,5 +395,361 @@ nav{
     }
     .box-img{
         right: 295px;
+        top: -250px;
+    }
+}
+@media (max-width: 806px){
+    .img-container{
+        width: 17%;
+        height: 22%;
+        position: relative;
+        top: 20px;
+        right: 50px;
+
+    }
+    .box-img{
+        right: 295px;
+        top: -240px;
+    }
+}
+@media (max-width: 741px){
+    .remote-image{
+        left: 15px;
+        top: 5px;
+    }
+    .remote-text{
+        left: 15px;
+    }
+    .blogs-and-resources{
+        right: 15px;
+    }
+    .nav-icons{
+        gap: 20px;
+        margin-right: 70px;
+    }
+    .background{
+        padding-left: 20px;
+    }
+}
+@media (max-width: 708px){
+    .learn-web{
+        grid-template-rows: 0.1fr 0.5fr;
+        width: 280px;
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .learn-web-digital, .opportunities{
+        width: 320px;
+        font-size: 9px;
+        margin-top: 25px;
+    }
+    .button-div{
+        margin-top: 35px;
+        grid-template-columns: 100px 100px;
+    } 
+    .explore-course{
+        font-size: 8px;
+    }
+    .free-resources{
+        font-size: 8px;
+    }
+    .img-container{
+        width: 15%;
+        height: 22%;
+        position: relative;
+        top: 20px;
+        right: 120px;
+
+    }
+    .just-div{
+        position: relative;
+        right: 250px;
+        top: 10px;
+    }
+   .box-img{
+        top: -230px;
+        right: 255px;
+    }
+   .vertical-line-container{
+    margin-left: 0px;
+    gap: 40px;
+    }
+}
+@media (max-width: 654px){
+    .img-container{
+        right: 150px;
+    }
+    .remote-image{
+        left: 15px;
+        top: 5px;
+    }
+    .remote-text{
+        left: 15px;
+    }
+    .blogs-and-resources{
+        right: 30px;
+    }
+    .nav-icons{
+        gap: 15px;
+        margin-right: 75px;
+    }
+    
+}
+@media (max-width: 624px){
+    .img-container{
+        right: 190px;
+        
+    }
+}
+@media (max-width: 584px){
+    .learn-web{
+        grid-template-rows: 0.1fr 0.5fr;
+        width: 230px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .learn-web-digital, .opportunities{
+        width: 300px;
+        font-size: 7px;
+        margin-top: 25px;
+    }
+    .button-div{
+        margin-top: 35px;
+        grid-template-columns: 100px 100px;
+    } 
+    .explore-course{
+        font-size: 8px;
+    }
+    .free-resources{
+        font-size: 8px;
+    }
+    .img-container{
+        width: 14%;
+        height: 19%;
+        position: relative;
+        top: 20px;
+        right: 205px;
+
+    }
+    .just-div{
+        position: relative;
+        right: 250px;
+        top: 10px;
+    }
+   .box-img{
+        top: -200px;
+        right: 255px;
+    }
+    .remote-image{
+        left: 15px;
+        top: 5px;
+    }
+    .remote-text{
+        left: 15px;
+        font-size: 10px;
+    }
+    .blogs-and-resources{
+        right: 30px;
+        display: none;
+    }
+    .nav-icons{
+        gap: 15px;
+        margin-right: 75px;
+        font-size: 10px;
+        display: none;
+    }
+    .menu{
+        display: grid;
+        position: relative;
+        top: -2px;
+        gap: 6px;
+    }
+    .menu-line{
+        width: 20px;
+        height: 2px;
+        font-style: solid;
+        color: white;
+        background-color: white;
+        margin-right: -1000px;
+        position: relative;
+        right: -40px;
+        
+    }
+}
+@media (max-width: 555px){
+    .img-container{
+        width: 14%;
+        height: 19%;
+        position: relative;
+        top: 20px;
+        right: 240px;
+
+    }
+}
+@media (max-width: 523px){
+    .img-container{
+        width: 14%;
+        height: 19%;
+        position: relative;
+        top: 20px;
+        right: 260px;
+
+    }
+}
+@media (max-width: 499px){
+    .img-container{
+        width: 14%;
+        height: 19%;
+        position: relative;
+        top: 20px;
+        right: 280px;
+
+    }
+}
+@media (max-width: 478px){
+    .img-container{
+        width: 12%;
+        height: 14%;
+        position: relative;
+        top: 4px;
+        right: 250px;
+
+    }
+    .just-div{
+        width: 120px;
+        height: 120px;
+        right: 260px;
+    }
+    .box-img{
+        top: -140px;
+        right: 362px;
+        width: 300px;
+        height: 155px;
+    }
+    .learn-web{
+        grid-template-rows: 0.1fr 0.5fr;
+        width: 150px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .learn-web-digital, .opportunities{
+        width: 200px;
+        font-size: 5px;
+        margin-top: 18px;
+    }
+    .button-div{
+        margin-top: 30px;
+        grid-template-columns: 70px 70px;
+        
+    } 
+    .explore-course{
+        font-size: 5px;
+        padding: 5px;
+        padding-left: 15.5px;
+    }
+    .free-resources{
+        font-size: 5px;
+        padding: 5px;
+        padding-left: 15.5px;
+    }
+    .vertical-line-container{
+        margin-left: 0px;
+        gap: 20px;
+    }
+}
+@media (max-width: 442px){
+    .img-container{
+        width: 12%;
+        height: 14%;
+        position: relative;
+        top: 4px;
+        right: 290px;
+
+    }
+}
+@media (max-width: 398px){
+    .img-container{
+        width: 12%;
+        height: 14%;
+        position: relative;
+        top: 4px;
+        right: 320px;
+
+    }
+}
+@media (max-width: 368px){
+    .img-container{
+        width: 12%;
+        height: 14%;
+        position: relative;
+        top: 4px;
+        right: 340px;
+
+    }
+}
+@media (max-width: 333px){
+    .img-container{
+        width: 12%;
+        height: 14%;
+        position: relative;
+        top: 4px;
+        right: 355px;
+
+    }
+}
+@media (max-width: 348px){
+    .img-container{
+        width: 12%;
+        height: 14%;
+        position: relative;
+        top: 4px;
+        right: 380px;
+
+    }
+    .learn-web{
+        grid-template-rows: 0.1fr 0.5fr;
+        width: 100px;
+        font-size: 7px;
+        line-height: 20px;
+    }
+    .learn-web-digital, .opportunities{
+        width: 120px;
+        font-size: 3px;
+        margin-top: 18px;
+    }
+    .button-div{
+        margin-top: 30px;
+        grid-template-columns: 38px 38px;
+        
+    } 
+    .explore-course{
+        font-size: 2px;
+        padding: 3px;
+        padding-left: 11px;
+    }
+    .free-resources{
+        font-size: 2px;
+        padding: 3px;
+        padding-left: 11px;
+    }
+}
+@media (max-width: 307px){
+    .img-container{
+        width: 12%;
+        height: 14%;
+        position: relative;
+        top: 4px;
+        right: 400px;
+
+    }
+}
+@media (max-width: 291px){
+    .img-container{
+        width: 12%;
+        height: 14%;
+        position: relative;
+        top: 4px;
+        right: 410px;
+
     }
 }
